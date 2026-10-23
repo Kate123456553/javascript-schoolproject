@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript einfach erklärt</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>JavaScript einfach erklärt</h1>
+        <p>Die wichtigsten Grundlagen für Anfänger</p>
+    </header>
+
+    <nav>
+        <a href="#grundlagen">Grundlagen</a>
+        <a href="#variablen">Variablen</a>
+        <a href="#bedingungen">Bedingungen</a>
+        <a href="#funktionen">Funktionen</a>
+    </nav>
+
+    <main>
+
+        <section id="grundlagen">
+            <h2>1. Was ist JavaScript?</h2>
+            <p>
+                JavaScript ist eine Programmiersprache.
+                Sie macht Websites interaktiv.
+                Zum Beispiel können Buttons auf Klicks reagieren.
+            </p>
+        </section>
+
+        <section id="variablen">
+            <h2>2. Variablen</h2>
+            <p>
+                Variablen speichern Informationen,
+                zum Beispiel Texte oder Zahlen.
+            </p>
+
+            <pre><code>let name = "Max";
+let alter = 16;
+const land = "Deutschland";</code></pre>
+
+            <p>
+                <strong>let</strong> erlaubt es, einen Wert zu ändern.
+                <strong>const</strong> ist für eine Variable gedacht,
+                deren Zuweisung nicht geändert werden soll.
+            </p>
+
+            <button id="variablenButton">
+                Beispiel ausprobieren
+            </button>
+
+            <p id="variablenAusgabe"></p>
+        </section>
+
+        <section id="bedingungen">
+            <h2>3. Bedingungen</h2>
+            <p>
+                Mit if und else kann ein Programm
+                unterschiedliche Entscheidungen treffen.
+            </p>
+
+            <pre><code>if (alter >= 18) {
+    // Person ist volljährig
+} else {
+    // Person ist minderjährig
+}</code></pre>
+
+            <button id="bedingungenButton">
+                Bedingung testen
+            </button>
+
+            <p id="bedingungenAusgabe"></p>
+        </section>
+
+        <section id="funktionen">
+            <h2>4. Funktionen und Klick-Zähler</h2>
+            <p>
+                Funktionen sind Code-Blöcke,
+                die man aufrufen kann, wenn man sie braucht.
+            </p>
+
+            <pre><code>function begruessung() {
+    alert("Hallo!");
+}</code></pre>
+
+            <p>
+                Hier kannst du eine Funktion ausprobieren:
+            </p>
+
+            <button id="grussButton">Hallo sagen</button>
+
+            <hr>
+
+            <h3>Mein Klick-Zähler</h3>
+            <p>Du hast den Button
+                <strong id="zaehler">0</strong> Mal geklickt.
+            </p>
+
+            <button id="zaehlerButton">+1 Klick</button>
+            <button id="resetButton">Zurücksetzen</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Schulprojekt – Einführung in JavaScript</p>
+    </footer>
+
+</body>
+</html>
